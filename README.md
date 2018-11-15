@@ -2,12 +2,11 @@
 
 [![Gem Version](https://img.shields.io/gem/v/sentry-jets.svg)](https://rubygems.org/gems/sentry-jets)
 
-[Sentry](https://sentry.io) is a error tracking service that helps developers monitor and fix crashes in real time.
+[Sentry](https://sentry.io) is an error tracking service that helps developers monitor and fix crashes in real time.
 
-This gem adds Sentry error reporting to: [Jets: Ruby Serverless Framework](http://rubyonjets.com/).
+This gem adds Sentry error reporting support to [Jets: Ruby Serverless Framework](http://rubyonjets.com/).
 
 This gem is not officially associated and written by Sentry. This is written by [tongueroo](https://www.linkedin.com/in/tongueroo/).  Looking for maintainers or someone who would like to see if they can get this integrate to the official [sentry-raven](https://github.com/getsentry/raven-ruby) gem. At which point, this gem should be deprecated.
-
 
 ## Installation
 
@@ -20,6 +19,14 @@ gem 'sentry-jets'
 And then execute:
 
     bundle
+
+Add the `SENTRY_DSN` env variable to the `.env` file in your project.  Here's ane example of what `SENTRY_DSN` looks like.
+
+.env:
+
+    SENTRY_DSN=https://generated-random-user:generated-random-token@sentry.io/project-id
+
+To get a `SENTRY_DSN`, sign up for an account at [sentry.io](https://sentry.io) and create a project.  For more info on [Env Files](http://rubyonjets.com/docs/env-files/), refer to the Jets docs.
 
 ## Development
 
