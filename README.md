@@ -1,28 +1,25 @@
-# SentryJets
+# Sentry Jets
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/sentry_jets`. To experiment with that code, run `bin/console` for an interactive prompt.
+[![Gem Version](https://img.shields.io/gem/v/sentry-jets.svg)](https://rubygems.org/gems/sentry-jets)
 
-TODO: Delete this and the text above, and describe your gem
+[Sentry](https://sentry.io) is a error tracking service that helps developers monitor and fix crashes in real time.
+
+This gem adds Sentry error reporting to: [Jets: Ruby Serverless Framework](http://rubyonjets.com/).
+
+This gem is not officially associated and written by Sentry. This is written by [tongueroo](https://www.linkedin.com/in/tongueroo/).  Looking for maintainers or someone who would like to see if they can get this integrate to the official [sentry-raven](https://github.com/getsentry/raven-ruby) gem. At which point, this gem should be deprecated.
+
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Add this line to your Jets project Gemfile:
 
 ```ruby
-gem 'sentry_jets'
+gem 'sentry-jets'
 ```
 
 And then execute:
 
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install sentry_jets
-
-## Usage
-
-TODO: Write usage instructions here
+    bundle
 
 ## Development
 
@@ -32,7 +29,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/sentry_jets.
+Bug reports and pull requests are welcome on GitHub at https://github.com/tongueroo/sentry-jets.
 
 ## License
 

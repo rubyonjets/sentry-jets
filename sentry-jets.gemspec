@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Tung Nguyen"]
   spec.email         = ["tongueroo@gmail.com"]
 
-  spec.summary       = %q{Sentry exception report support for Jets.}
+  spec.summary       = %q{Sentry exception report support for Jets}
   spec.homepage      = "https://github.com/tongueroo/sentry-jets"
   spec.license       = "MIT"
 
