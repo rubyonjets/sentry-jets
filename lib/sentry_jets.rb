@@ -1,5 +1,6 @@
 require "sentry_jets/version"
 
 module SentryJets
-  # Your code goes here...
 end
+
+require_relative "sentry_jets/turbine" if defined?(Jets)
