@@ -8,7 +8,7 @@ module SentryJets
       end
     end
 
-    exception_reporter 'sentry.capture' do |exception|
+    on_exception 'sentry.capture' do |exception|
       Raven.capture_exception(exception)
     end
   end
