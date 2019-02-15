@@ -5,7 +5,7 @@ module SentryJets
     initializer 'sentry.configure' do
       Raven.configure do |config|
         config.dsn = ENV['SENTRY_DSN']
-        config.current_environment = ENV['SENTRY_CURRENT_ENV']
+        config.current_environment = ENV['SENTRY_CURRENT_ENV'] || Jets.env.to_s
       end
     end
 
