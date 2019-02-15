@@ -25,7 +25,7 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.8.0)
     rspec-support (3.8.0)
-    sentry-raven (2.7.4)
+    sentry-raven (2.9.0)
       faraday (>= 0.7.6, < 1.0)
 
 PLATFORMS
@@ -38,4 +38,4 @@ DEPENDENCIES
   sentry-jets!
 
 BUNDLED WITH
-   1.17.2
+   1.17.3
