@@ -2,6 +2,8 @@
 
 [![Gem Version](https://img.shields.io/gem/v/sentry-jets.svg)](https://rubygems.org/gems/sentry-jets)
 
+[![BoltOps Badge](https://img.boltops.com/boltops/badges/boltops-badge.png)](https://www.boltops.com)
+
 [Sentry](https://sentry.io) is an error tracking service that helps developers monitor and fix crashes in real time.
 
 This gem adds Sentry error reporting support to [Jets: Ruby Serverless Framework](http://rubyonjets.com/).
