@@ -1,4 +1,4 @@
-require 'sentry-raven'
+require 'sentry-ruby'
 
 module SentryJets
   class Turbine < ::Jets::Turbine
