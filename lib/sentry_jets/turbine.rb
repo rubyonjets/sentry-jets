@@ -6,7 +6,7 @@ module SentryJets
       Sentry.init do |config|
         config.dsn = ENV['SENTRY_DSN']
         config.environment = ENV['SENTRY_CURRENT_ENV'] || Jets.env.to_s
-        config.traces_sample_rate = ENV['SENTRY_TRACE_SAMPLE_RATE'] || 0.0
+        config.traces_sample_rate = ENV['SENTRY_TRACE_SAMPLE_RATE'].to_f || 0.0
       end
     end
 
