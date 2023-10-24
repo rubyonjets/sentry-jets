@@ -8,7 +8,7 @@
 
 This gem adds Sentry error reporting support to [Jets: Ruby Serverless Framework](http://rubyonjets.com/).
 
-This gem is not officially associated and written by Sentry. This is written by [tongueroo](https://www.linkedin.com/in/tongueroo/).  Looking for maintainers or someone who would like to see if they can get this integrated to the official [sentry-raven](https://github.com/getsentry/raven-ruby) gem instead. At which point, this gem should be deprecated.
+This gem is not officially associated and written by Sentry. This is written by [tongueroo](https://www.linkedin.com/in/tongueroo/).  Looking for maintainers or someone who would like to see if they can get this integrated to the official [sentry-ruby](https://github.com/getsentry/sentry-ruby) gem instead. At which point, this gem should be deprecated.
 
 ## Installation
 

@@ -1,17 +1,17 @@
-require 'sentry-raven'
+require 'sentry-ruby'
 
 module SentryJets
   class Turbine < ::Jets::Turbine
     initializer 'sentry.configure' do
-      Raven.configure do |config|
+      Sentry.init do |config|
         config.dsn = ENV['SENTRY_DSN']
-        config.current_environment = ENV['SENTRY_CURRENT_ENV'] || Jets.env.to_s
-        config.silence_ready = true
+        config.environment = ENV['SENTRY_CURRENT_ENV'] || Jets.env.to_s
+        config.traces_sample_rate = ENV['SENTRY_TRACE_SAMPLE_RATE'].to_f || 0.0
       end
     end
 
     on_exception 'sentry.capture' do |exception|
-      Raven.capture_exception(exception)
+      Sentry.capture_exception(exception)
     end
   end
 end
